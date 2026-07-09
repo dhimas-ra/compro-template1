@@ -401,6 +401,12 @@ http://www.templatemo.com/tm-473-november
 	.Services_sec .Serviceside { width: 100%; padding: 50px 0 30px; }
 	.Services_sec .Serviceside li { margin: 0px 0% 3% 2%; float: none; display:inline-block; }
 
+	.clients_sec {
+    padding: 100px 0px 88px 0px;
+    width: 100%;
+    overflow: hidden;
+    background: #ececec;
+}
 	.clients_sec h2 { font-size: 30px; line-height: 30px; }
 	.clients_sec p { padding: 15px 0px; font-size: 13px; }
 	.clients_sec .client-slider { width: 100%; padding: 50px 0 30px; }
