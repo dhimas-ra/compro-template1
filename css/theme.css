@@ -145,17 +145,17 @@ header.smaller .Navigation li { height: 60px; }
 	#Container { overflow: hidden; width: 100%; }
 
 	/* <<< About Section >>> */
-	.About_sec { padding: 115px 0px 88px 0px ; width: 100%; overflow: hidden; }
+	.About_sec { padding: 115px 0px 115px 0px ; width: 100%; overflow: hidden; background: #ececec;}
 	.About_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
 	.About_sec h2 { font-size: 56px; color: #000; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; letter-spacing: -0.4px; }
 	.About_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #979797; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
 	.About_sec .Line { border: solid 1px #ff9408; height: 2px; width: 252px; margin: auto; }
-	.About_sec .Tabside { padding: 90px 0px; width: 100%;}
+	.About_sec .Tabside { padding: 90px 100px; width: 100%; overflow:hidden;}
 	.About_sec .Tabside ul { list-style: none; margin: 0px; padding-bottom: 59px; }
 	.About_sec .Tabside li { float: none; padding: 0px; margin: 0px -2px; display: inline-block;}
 	.About_sec .Tabside li a { padding: 14px 40px 13px 40px; font-size: 18px; color: #989898; font-family: 'Open Sans', sans-serif; font-weight: 400; text-decoration: none; text-transform: uppercase; border: solid 1px #d5d5d5; display: block; transition: all 0.3s ease; }
 	.About_sec .Tabside li a:hover, .About_sec .Tabside li a.activeLink { border: solid 1px #ff9408; background: #ff9408; color: #fff;}
-	.About_sec .Tabside .TabImage { width: 43.63%; float: left; position: relative; }
+	.About_sec .Tabside .TabImage { width: 43.63%; float: left; position: relative;}
 	.About_sec .Tabside .TabImage .img1 { position: absolute; top: 0px; left: 42px; height: 260px; background: url(../img/about-shadow.png) no-repeat; background-position: 25px 223px; }
 	.About_sec .Tabside .TabImage .img1 img { padding: 5px; border: solid 1px #ececec; background: #fff;  }
 	.About_sec .Tabside .TabImage .img2 { position: absolute; top: 40px; left: 2px; height: 260px; background: url(../img/about-shadow.png) bottom center no-repeat; background-position: 0px 223px; }
@@ -165,6 +165,7 @@ header.smaller .Navigation li { height: 60px; }
 	.About_sec .Tabside .Description h3 span { padding-left: 3px; font-size: 14px; color: #ff9000; display: block; }
 	.About_sec .Tabside .Description p { padding: 21px 0px 4px 0px; font-size: 14px; color: #979797; margin: 0px; font-family:'Open Sans'; line-height: 25px; }
 	.About_sec .Tabside .Description p .cyan { font-size: 16px; color: #08c2ff; }
+	
 
 
 	/* <<< Services Section >>> */
@@ -174,23 +175,23 @@ header.smaller .Navigation li { height: 60px; }
 	.Services_sec p { padding: 25px 0px 35px 0px; font-size: 14px; color: #d8dfe5; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
 	.Services_sec .Line { border: solid 1px #ff9408; height: 2px; width: 252px; margin: auto; }
 	.Services_sec .Serviceside { padding: 76px 0px 30px 0px; width: 100%; overflow: hidden; }
-	.Services_sec .Serviceside .ServicesGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; align-items: stretch; }
-	.Services_sec .service-card { background: rgba(255,255,255,0.95); padding: 28px 22px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); text-align: left; transition: transform 0.25s ease, box-shadow 0.25s ease; display: flex; flex-direction: column; }
+	.Services_sec .Serviceside .ServicesGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 2fr)); gap: 24px; align-items: stretch; }
+	.Services_sec .service-card { background: rgba(255,255,255,0.95); padding: 28px 22px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); text-align: left; transition: transform 0.3s ease, box-shadow 0.25s ease; display: flex; flex-direction: column; }
 	.Services_sec .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 36px rgba(0,0,0,0.16); }
 	.Services_sec .service-card .card-icon { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: #fff; margin-bottom: 18px; overflow: hidden; padding: 0; }
 	.Services_sec .service-card .card-icon figure { width: 64px; height: 64px; margin: 0; }
 	.Services_sec .service-card .card-icon figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
 	.Services_sec .service-card h4 { margin: 0 0 8px 0; font-size: 18px; color: #222; font-family: 'Open Sans', sans-serif; font-weight: 700; text-transform: uppercase; }
-	.Services_sec .service-card p { margin: 0 0 16px 0; color: #666; line-height: 1.6; font-size: 14px; flex-grow: 1; }
-	.Services_sec .card-btn { display: inline-block; padding: 10px 14px; background: transparent; border: 2px solid #ff9408; color: #ff9408; text-decoration: none; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: all 0.2s ease; }
+	.Services_sec .service-card p { margin: 0 0 16px 0; color: #666; line-height: 1.6; font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 400; flex-grow: 1; }
+	.Services_sec .card-btn { display: inline-block; margin-top: auto; padding: 10px 14px; background: transparent; border: 2px solid #ff9408; color: #ff9408; text-decoration: none; font-weight: 700; text-transform: uppercase; border-radius: 4px; transition: all 0.2s ease; }
 	.Services_sec .card-btn:hover { background: #ff9408; color: #fff; }
-	.Services_sec .service-card.dev .card-icon { background: linear-gradient(135deg,#2a9bd6,#03a4df); }
+	/* .Services_sec .service-card.dev .card-icon { background: linear-gradient(135deg,#2a9bd6,#03a4df); }
 	.Services_sec .service-card.design .card-icon { background: linear-gradient(135deg,#ffb86b,#ff9a2e); }
 	.Services_sec .service-card.concept .card-icon { background: linear-gradient(135deg,#ffd36b,#ffb84a); }
-	.Services_sec .service-card.system .card-icon { background: linear-gradient(135deg,#7a7a7a,#5e5f61); }
+	.Services_sec .service-card.system .card-icon { background: linear-gradient(135deg,#7a7a7a,#5e5f61); } */
 	.Services_sec .service-card .info { padding: 20px 22px 24px 22px; }
 	.Services_sec .service-card .info h4 { font-size: 18px; color: #000; font-family: 'Open Sans', sans-serif; font-weight: 600; margin: 0px 0px 8px 0px; }
-	.Services_sec .service-card .info p { padding: 0px 0px 10px 0px; font-size: 13px; color: #777; line-height: 22px; }
+	.Services_sec .service-card .info p { padding: 0px 0px 10px 0px; font-size: 13px; color: #777; line-height: 22px; flex-grow: 1; }
 
 	/* Responsive */
 	@media (max-width: 992px) {
@@ -202,14 +203,14 @@ header.smaller .Navigation li { height: 60px; }
 		.Services_sec .service-card { padding: 20px; }
 	}
 
-	.clients_sec { padding: 115px 0px 88px 0px ; width: 100%; overflow: hidden; }
+	.clients_sec { padding: 115px 0px 88px 0px ; width: 100%; overflow: hidden; background: #ececec }
 	.clients_sec .Center .section-title { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
 	.clients_sec h2 { font-size: 56px; color: #000000; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; }
-	.clients_sec p { padding: 25px 0px 35px 0px; font-size: 14px; color: #d8dfe5; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
+	.clients_sec p { padding: 25px 0px 35px 0px; font-size: 14px; color: #7a7a7a; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
 	.clients_sec .Line { border: solid 1px #ff9408; height: 2px; width: 252px; margin: auto; }
 	.clients_sec .client-slider { padding: 76px 0px 30px 0px; width: 100%; overflow: hidden; }
 
-	.Portfolio_sec { padding: 112px 0px 88px 0px; width: 100%; overflow: hidden; background: #f7f7f7; }
+	.Portfolio_sec { padding: 112px 0px 88px 0px; width: 100%; overflow: hidden; background: #ececec; }
 	.Portfolio_sec .Center { max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
 	.Portfolio_sec h2 { font-size: 56px; color: #000; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px; }
 	.Portfolio_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #7a7a7a; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
@@ -268,10 +269,10 @@ header.smaller .Navigation li { height: 60px; }
 
 	/* <<< Contact Section >>> */
 	.Contact_sec { width: 100%; overflow: hidden; }
-	.Contact_sec .Contactside { background: url(../img/Contact-bg.jpg) top center no-repeat; background-size: cover; overflow: hidden;}
+	.Contact_sec .Contactside { background: #ececec}
 	.Contact_sec .Center { padding: 115px 0px 77px 0px;  max-width: 1100px; margin: auto; overflow: hidden; text-align: center; }
-	.Contact_sec h2 { font-size: 57px; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px;}
-	.Contact_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #ebebeb; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
+	.Contact_sec h2 { font-size: 57px; color: #000000; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform: uppercase; line-height: 60px;}
+	.Contact_sec p { padding: 24px 0px 35px 0px; font-size: 14px; color: #7a7a7a; margin: 0px; font-family: 'Open Sans', sans-serif; line-height: 25px; font-weight: 400; }
 	.Contact_sec .Line { border: solid 1px #ff9408; height: 2px; width: 252px; margin: auto; }
 	.Contact_sec .Pricingside { padding: 70px 0px 10px 0px; width: 100%; overflow: hidden; text-align: initial; }
 	
@@ -281,8 +282,8 @@ header.smaller .Navigation li { height: 60px; }
 		.Map #GoogleMap { height: 399px; }
 
 		/* <<< Get Section >>> */
-		.Get_sec { width: 100%; overflow: hidden; background: url(../img/Get-bg.jpg) top center no-repeat; background-size: cover; }
-		.Get_sec .Mid { padding: 76px 0px 95px 0px; max-width: 1100px; margin: auto; overflow: hidden; }
+		.Get_sec { width: 100%; overflow: hidden; background: #ececec; }
+		.Get_sec .Mid { padding: 0px 0px 95px 0px; max-width: 1100px; margin: auto; overflow: hidden; }
 		.Get_sec .Leftside { width: 48.2%; float: left; }
 		.Get_sec .Leftside fieldset { padding: 0px; margin: 0px; }
 		.Get_sec .Leftside p { padding: 0px; margin: 0px 0px 25px 0px;  }
@@ -295,10 +296,10 @@ header.smaller .Navigation li { height: 60px; }
 		.Get_sec .Leftside .button:hover { background: #2d2d2d; color: #fff;}
 		.Get_sec .Rightside { padding-top: 12px; width: 48.18%; float: right;}
 		.Get_sec .Rightside h3 { padding-bottom: 44px; font-size: 46px; color: #f88e04; font-family: 'Oswald', sans-serif; font-weight: 400; margin: 0px; text-transform:uppercase; line-height: 46px; }
-		.Get_sec .Rightside address { padding: 0px 0px 27px 65px; margin-left: 3px; font-size: 14px; color: #ebedf1; font-family: 'Open Sans', sans-serif; font-weight: 400; font-style: normal; background: url(../img/location-icn.png) left 4px no-repeat; line-height: 24px;  }
-		.Get_sec .Rightside address.Number { background: url(../img/phone-icn.png) left 5px no-repeat; }
-		.Get_sec .Rightside address.Email { margin-left: 4px; background: url(../img/mail-icn.png) left 0px no-repeat; }
-		.Get_sec .Rightside address.Email a { text-decoration: none; color: #ebedf1; }
+		.Get_sec .Rightside address { padding: 0px 0px 27px 65px; margin-left: 3px; font-size: 14px; color: #7a7a7a; font-family: 'Open Sans', sans-serif; font-weight: 400; font-style: normal; background: url(../img/map.png) left 4px no-repeat; line-height: 24px; background-size: 20px; background-position: 0px 4px; }
+		.Get_sec .Rightside address.Number { background: url(../img/telephone.png) left 5px no-repeat; background-size: 20px; background-position: 0px 4px; }
+		.Get_sec .Rightside address.Email { margin-left: 4px; background: url(../img/mail.png) left 0px no-repeat; background-size: 20px; background-position: 0px 4px; }
+		.Get_sec .Rightside address.Email a { text-decoration: none; color: #7a7a7a; }
 		.Get_sec .Rightside address.Email a:Hover { color: #f88e04; }
 		.Get_sec .Rightside ul { list-style: none; margin: 0px; padding: 27px 0px 0px 3px; }
 		.Get_sec .Rightside li { float: left; padding: 0px; margin: 0px  22px 0px 0px; }

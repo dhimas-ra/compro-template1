@@ -20,6 +20,7 @@ async function init() {
     console.log(data);
 
     renderSetting(data.setting);
+    renderAbout(data.setting);
     renderServices(data.services);
     renderPortfolio(data.portfolio);
     renderClients(data.clients);
@@ -48,6 +49,11 @@ function renderSetting(setting) {
     logo.href = "#home";
   }
 
+  const foot = document.getElementById("company_foot");
+
+  if (foot) {
+    foot.textContent = setting.company_name;
+  }
   // ===========================
   // HERO
   // ===========================
@@ -180,59 +186,73 @@ function renderSetting(setting) {
 }
 
 // ======================================================
+// ABOUT
+// ======================================================
+
+function renderAbout(setting) {
+  // ===== Images =====
+  document.querySelectorAll(".about-img1").forEach((img) => {
+    img.src = setting.about_img1 || "";
+  });
+
+  document.querySelectorAll(".about-img2").forEach((img) => {
+    img.src = setting.about_img2 || "";
+  });
+
+  
+  // ===== VISI =====
+  document.getElementById("visi_title").childNodes[0].textContent =
+    setting.visi_title || "";
+
+  document.getElementById("visi_desc").textContent = setting.visi_desc || "";
+
+  // ===== MISI =====
+  document.getElementById("misi_title").childNodes[0].textContent =
+    setting.misi_title || "";
+
+  document.getElementById("misi_desc").textContent = setting.misi_desc || "";
+
+}
+
+// ======================================================
 // SERVICES
 // ======================================================
 
-// function renderServices(services) {
-//   const list = document.getElementById("services_list");
-
-//   if (!list) return;
-
-//   list.innerHTML = "";
-
-//   services.forEach((service) => {
-//     list.innerHTML += `
-
-//             <li class="${service.class}">
-//                 <a href="#services">
-//                     <h4>${service.title}</h4>
-//                 </a>
-//             </li>
-
-//         `;
-//   });
-// }
-
 function renderServices(services) {
-  const container = document.getElementById("services_container");
+  const card = document.getElementById("services_container");
 
-  container.innerHTML = "";
+  if (!card) return;
 
-  services.forEach((item, index) => {
-    const card = document.createElement("article");
-    card.className = `service-card ${item.class || ""}`;
+  card.innerHTML = "";
 
-    card.style.animationDelay = `${index * 0.15}s`;
+  services.forEach((item) => {
+    // const card = document.createElement("article");
+    // card.className = `service-card ${item.class || ""}`;
 
-    card.innerHTML = `          
-              <div class="card-icon">
+    // card.style.animationDelay = `${index * 0.15}s`;
+
+    card.innerHTML += `
+            <article class="service-card">
+                <div class="card-icon">
                   <figure>
-                    <img src="${item.image}" alt="${item.title}">
+                    <img src="${item.image}" alt="${item.ser_title}">
                 </figure>
               </div>
 
-              <div class="info">
-                  <h4>${item.title}</h4>
+              
+                  <h4>${item.ser_title}</h4>
 
-            <p>${item.description}</p>
-              </div>
+            <p>${item.description_ser}</p>
+              
             <a href="${item.link || "#contact"}" class="card-btn">
                 ${item.button || "Learn More"}
             </a>
-            </div>
+            
+            </article>          
+              
         `;
 
-    container.appendChild(card);
+    // container.appendChild(card);
   });
 }
 
@@ -252,14 +272,14 @@ function renderPortfolio(portfolio) {
             <article class="portfolio-item">
 
                 <figure>
-                    <img src="${item.image}" alt="${item.title}">
+                    <img src="${item.image}" alt="${item.por_title}">
                 </figure>
 
                 <div class="info">
 
-                    <h4>${item.title}</h4>
+                    <h4>${item.por_title}</h4>
 
-                    <p>${item.description}</p>
+                    <p>${item.description_por}</p>
 
                     <a href="${item.link}">View Project</a>
 
