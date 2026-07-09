@@ -135,7 +135,7 @@ function renderSetting(setting) {
   // ===========================
 
   document.getElementById("portfolio_desc").textContent =
-    setting.portfolio_desc || "";
+    setting.portofolio_desc || "";
 
   // const portfolioTitle = document.getElementById("portfolio_title");
 

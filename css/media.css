@@ -57,6 +57,7 @@ http://www.templatemo.com/tm-473-november
 	.Rating_sec .Center { width: 100%; padding: 0px 2%; }
 	.Rating_sec .RatingGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
+	.clients_sec { width: 100%; padding: 70px 0px; }
 	.clients_sec .client-slider { width: 100%; padding: 50px 0 30px; }
 
 	.Pricing_sec { width: 100%; padding: 70px 0px; }
@@ -163,6 +164,7 @@ http://www.templatemo.com/tm-473-november
 	.Services_sec .Serviceside li.System h4 { padding: 134px 0 0; }
 	.Services_sec .Serviceside li.System a:hover h4 { background-size: 60%;}
 
+	.clients_sec { width: 100%; padding: 70px 0px; }
 	.clients_sec h2 { font-size: 30px; line-height: 30px; }
 	.clients_sec p { padding: 15px 0px; font-size: 13px; }
 	.clients_sec .client-slider { width: 100%; padding: 50px 0 30px; }
@@ -279,6 +281,7 @@ http://www.templatemo.com/tm-473-november
 	.Rating_sec h2 { font-size: 30px; line-height: 30px; }
 	.Rating_sec .RatingGrid { grid-template-columns: 1fr; }
 
+	.clients_sec { width: 100%; padding: 100px 0px 30px; }
 	.clients_sec h2 { font-size: 30px; line-height: 30px; }
 	.clients_sec p { padding: 15px 0px; font-size: 13px; }
 	.clients_sec .client-slider { width: 100%; padding: 50px 0 30px; }
